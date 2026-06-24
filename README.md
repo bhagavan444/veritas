@@ -200,3 +200,6 @@ A future where information can be understood, not merely consumed.
 ### VERITAS
 
 **Intelligence, made transparent.**
+## Product Demonstration
+
+Download the demo video from the release assets below.
