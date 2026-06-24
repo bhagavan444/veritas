@@ -1,0 +1,177 @@
+.reasoningContainer {
+  padding: 10rem 2rem;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 800px; /* Narrower editorial column */
+}
+
+.header {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #86868b;
+  font-weight: 400;
+  margin: 0;
+}
+
+.document {
+  font-family: "Georgia", serif;
+  color: #f5f5f7;
+}
+
+.docSection {
+  margin-bottom: 4rem;
+}
+
+.docHeader {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin: 0 0 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.claimList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.claimItem {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #222222;
+}
+
+.claimMeta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.claimStatus {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  color: #a1a1aa;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.claimText {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.whyItMatters {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #111111;
+  border-left: 2px solid #0066cc;
+  border-radius: 0 4px 4px 0;
+}
+
+.whyLabel {
+  display: block;
+  font-size: 0.75rem;
+  color: #0066cc;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.whyText {
+  color: #a1a1aa;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.editorialGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.editorialBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.blockLabel {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.85rem;
+  color: #86868b;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blockValue {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #f5f5f7;
+  margin: 0;
+}
+
+.traceLog {
+  background-color: #111111;
+  padding: 2rem;
+  border-radius: 8px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.traceStep {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #f5f5f7;
+  margin: 0 0 1rem 0;
+}
+
+.traceStep:last-child {
+  margin-bottom: 0;
+}
+
+.stepIndex {
+  color: #86868b;
+  margin-right: 1rem;
+}
+
+.emptyText {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  color: #86868b;
+  font-style: italic;
+}

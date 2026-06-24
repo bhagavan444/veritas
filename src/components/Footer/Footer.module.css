@@ -1,0 +1,138 @@
+.footerWrapper {
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 70vh; /* Approximately 60-80vh */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  border-top: 1px solid #f5f5f7;
+  padding: 8rem 2rem 4rem 2rem;
+  overflow: hidden;
+}
+
+.footerContainer {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* SECTION 1: Massive Closing Statement */
+.closingSection {
+  margin-bottom: 6rem;
+}
+
+.brandMark {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #6e6e73;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.manifesto {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.manifestoSubtext {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #6e6e73;
+  max-width: 600px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+/* SECTION 2: Product Navigation */
+.navigationSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 6rem;
+}
+
+.navigationSection a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.navigationSection a:hover {
+  color: #6e6e73;
+}
+
+/* SECTION 3: Methodology Statement */
+.methodologySection {
+  margin-bottom: 6rem;
+}
+
+.methodologySection p {
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: #86868b;
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/* SECTION 4 & 5: Platform Metadata & Copyright */
+.bottomSection {
+  width: 100%;
+  border-top: 1px solid #e5e5ea;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.metadata, .copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.metadata strong {
+  font-size: 0.9rem;
+  color: #000000;
+  font-weight: 700;
+}
+
+.metadata span, .copyright span {
+  font-size: 0.8rem;
+  color: #86868b;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .bottomSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .metadata, .copyright {
+    align-items: flex-start;
+  }
+  
+  .copyright {
+    align-items: flex-end;
+    text-align: right;
+  }
+}

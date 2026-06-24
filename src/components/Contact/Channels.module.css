@@ -1,0 +1,40 @@
+.channelsContainer {
+  padding: 15rem 2rem 5rem 2rem;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 6rem;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #86868b;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}

@@ -1,0 +1,58 @@
+.systemContainer {
+  padding: 10rem 2rem 15rem 2rem;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 800px; /* Editorial width */
+  color: #ffffff;
+}
+
+.intro {
+  margin-bottom: 6rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #86868b;
+  display: block;
+  margin-bottom: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 500;
+  margin: 0;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.storyStack {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.storyBlock h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.storyBlock p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #86868b;
+  line-height: 1.6;
+  margin: 0;
+  letter-spacing: -0.01em;
+}

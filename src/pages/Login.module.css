@@ -1,0 +1,361 @@
+.pageWrapper {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* SECTION 1 & 2: Hero and Auth */
+.heroSection {
+  display: flex;
+  min-height: 100vh;
+  padding: 4rem;
+  gap: 4rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.heroContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+.brandTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 4rem;
+  color: #ffffff;
+}
+
+.heroHeadline {
+  font-size: clamp(4rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.heroSubheadline {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #6e6e73;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.heroParagraph {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #6e6e73;
+  max-width: 500px;
+}
+
+/* Right Side: Auth Surface */
+.authWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authSurface {
+  background-color: #111111;
+  border: 1px solid #333333;
+  border-radius: 48px; /* Massive Apple-style radius */
+  padding: 4rem;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+.authTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.modeToggle {
+  display: flex;
+  background-color: #222222;
+  border-radius: 12px;
+  padding: 4px;
+  margin-bottom: 2.5rem;
+}
+
+.modeBtn {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: #6e6e73;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.activeMode {
+  background-color: #333333;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6e6e73;
+}
+
+.inputGroup input {
+  padding: 1.25rem;
+  font-size: 1.05rem;
+  background-color: #222222;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.inputGroup input:focus {
+  border-color: #ffffff;
+  background-color: #333333;
+}
+
+.formOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #6e6e73;
+  cursor: pointer;
+}
+
+.forgotBtn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.forgotBtn:hover {
+  text-decoration: underline;
+}
+
+.primaryBtn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.primaryBtn:active {
+  transform: scale(0.98);
+}
+
+.primaryBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.divider {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #e5e5ea;
+  z-index: 1;
+}
+
+.divider span {
+  background-color: #111111;
+  padding: 0 1rem;
+  color: #6e6e73;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 2;
+}
+
+.googleBtn {
+  width: 100%;
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #222222;
+  color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.googleBtn:hover {
+  background-color: #333333;
+}
+
+.errorMessage {
+  background-color: #fff2f2;
+  color: #ff3b30;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* SECTION 3: Unlock Grid */
+.unlockSection {
+  padding: 8rem 4rem;
+  background-color: #111111;
+  max-width: 1600px;
+  margin: 0 auto;
+  border-radius: 48px;
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 4rem;
+}
+
+.unlockGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.unlockBlock h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.unlockBlock p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #6e6e73;
+}
+
+/* SECTION 4: Trust Statement */
+.trustSection {
+  padding: 8rem 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.trustContent h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 2rem;
+}
+
+.trustContent p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #6e6e73;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* SECTION 5: Footer */
+.footer {
+  padding: 4rem;
+  text-align: center;
+  border-top: 1px solid #e5e5ea;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.footerNav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footerNav a:hover {
+  color: #6e6e73;
+}
+
+.copyright {
+  color: #86868b;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .heroSection {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 4rem;
+  }
+  .heroContent {
+    padding-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .unlockSection {
+    margin: 0 2rem 2rem 2rem;
+    padding: 4rem 2rem;
+    border-radius: 24px;
+  }
+  .trustSection {
+    padding: 4rem 2rem;
+  }
+}

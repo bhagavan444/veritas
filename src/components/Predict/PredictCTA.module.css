@@ -1,0 +1,45 @@
+.ctaContainer {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111111;
+  padding: 0 2rem;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+  margin: 0 0 4rem 0;
+  line-height: 1.1;
+}
+
+.primaryButton {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 980px;
+  padding: 1.2rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.primaryButton:hover {
+  transform: scale(1.02);
+}
+
+.primaryButton:active {
+  transform: scale(0.98);
+}

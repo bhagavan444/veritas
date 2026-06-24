@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  veritas-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: veritas_engine
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app/backend
+    environment:
+      - ENVIRONMENT=development
+      - LOG_LEVEL=INFO
+    restart: unless-stopped

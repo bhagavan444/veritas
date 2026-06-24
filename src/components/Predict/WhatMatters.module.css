@@ -1,0 +1,82 @@
+.insightsContainer {
+  padding: 10rem 2rem;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.header {
+  margin-bottom: 6rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #86868b;
+  display: block;
+  margin-bottom: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.number {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #86868b;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin-top: 0.3rem;
+}
+
+.insightText {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 400;
+  color: #f5f5f7;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.riskSection {
+  margin-top: 6rem;
+}
+
+.riskBox {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-left: 2px solid #ef4444;
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+.riskText {
+  color: #fca5a5;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}

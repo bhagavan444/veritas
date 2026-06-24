@@ -1,0 +1,65 @@
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  max-width: 1000px;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #86868b;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin: 0 0 4rem 0;
+  line-height: 1.1;
+  background: linear-gradient(180deg, #ffffff 0%, #888888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.subtextHighlight {
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin: 0;
+}
+
+.subtext {
+  font-size: clamp(1.1rem, 2vw, 1.8rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #86868b;
+  margin: 0;
+  line-height: 1.4;
+}

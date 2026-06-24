@@ -1,0 +1,44 @@
+.futureContainer {
+  padding: 20rem 2rem;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  text-align: center;
+}
+
+.primaryStatement {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.dimmed {
+  color: #86868b;
+  font-weight: 500;
+}
+
+.secondaryStatements {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.secondaryStatements p {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 500;
+  color: #86868b;
+  margin: 0;
+  letter-spacing: -0.02em;
+}

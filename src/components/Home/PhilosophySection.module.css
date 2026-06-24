@@ -1,0 +1,39 @@
+.philosophyContainer {
+  padding: 15rem 2rem;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 500;
+  color: #86868b;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.titleHighlight {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}

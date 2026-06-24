@@ -1,0 +1,42 @@
+.principleContainer {
+  padding: 15rem 2rem;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.title {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.04em;
+  background: linear-gradient(180deg, #ffffff 0%, #888888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statementGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.statement {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 500;
+  color: #86868b;
+  margin: 0;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}

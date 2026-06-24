@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+venv_test/
+.venv/
+.pytest_cache/
+tests/__pycache__/
+node_modules/
+dist/
+public/
+src/

@@ -1,0 +1,44 @@
+.connectContainer {
+  padding: 10rem 2rem;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.link {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 400;
+  color: #86868b;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  width: fit-content;
+}
+
+.link:hover {
+  color: #fff;
+  transform: translateX(10px);
+}

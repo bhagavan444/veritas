@@ -9,9 +9,19 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Plans from "./pages/Plans";
 import Predict from "./pages/Predict";
-import Admin from "./pages/Admin"; // Added Admin page import
+import Admin from "./pages/Admin";
+import Examples from "./pages/Examples";
+import HowItWorks from "./pages/HowItWorks";
+import Technology from "./pages/Technology";
+import Research from "./pages/Research";
+import Validation from "./pages/Validation";
+import Compare from "./pages/Compare";
+import Limitations from "./pages/Limitations";
+import Workspace from "./pages/Workspace";
+import SavedReports from "./pages/SavedReports";
+import ReportDetail from "./pages/ReportDetail";
 
-import { auth } from "./firebase"; // Firebase auth
+import { auth } from "./firebase";
 
 // Error Boundary
 class ErrorBoundary extends Component {
@@ -62,7 +72,7 @@ function App() {
       .then(() => {
         setIsLoggedIn(false);
         localStorage.removeItem("user");
-        window.location.href = "/login"; // Programmatic navigation
+        window.location.href = "/login";
       })
       .catch((error) => {
         console.error("Logout failed:", error);
@@ -83,6 +93,21 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/plans" element={<Plans />} />
+          
+          {/* New Portfolio Integration Routes */}
+          <Route path="/examples" element={<Examples />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/validation" element={<Validation />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/limitations" element={<Limitations />} />
+          
+          {/* Intelligence Library Routes */}
+          <Route path="/workspace" element={<Workspace />} />
+          <Route path="/workspace/saved" element={<SavedReports />} />
+          <Route path="/workspace/report/:id" element={<ReportDetail />} />
+
           <Route
             path="/login"
             element={isLoggedIn ? <Navigate to="/predict" /> : <Login handleLogin={handleLogin} />}
@@ -91,7 +116,6 @@ function App() {
             path="/predict"
             element={isLoggedIn ? <Predict /> : <Navigate to="/login" />}
           />
-          {/* New Admin Route - Protected */}
           <Route
             path="/admin"
             element={isLoggedIn ? <Admin /> : <Navigate to="/login" />}
