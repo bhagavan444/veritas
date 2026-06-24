@@ -1,255 +1,202 @@
-🚀 Fake News Detection System
+# VERITAS
 
-📌 1. Project Vision
+### Understand Information. Understand Reasoning.
 
-This is not just a text classifier.
+VERITAS is an Explainable Intelligence Platform designed to transform articles into structured intelligence.
 
-It is a machine learning–powered misinformation detection system designed to analyze news content and classify it as Fake or Real using Natural Language Processing (NLP).
+Most systems provide answers.
 
-The system:
+VERITAS provides reasoning.
 
-Accepts news headlines or full articles
+Rather than determining what is true, VERITAS exposes the underlying signals that shape information:
 
-Performs text preprocessing
+* Claims
+* Evidence
+* Credibility
+* Bias
+* Decision Traces
+* Intelligence Reports
 
-Extracts linguistic features
+The result is a transparent analytical process that helps users understand not only what was said, but why it matters.
 
-Applies trained ML models
+---
 
-Outputs prediction with confidence score
+## The Problem
 
-In production terms, this is:
+Information has never been more accessible.
 
-An NLP-based classification microservice with a real-time web interface.
+Understanding has never been more difficult.
 
-⚙️ 2. End-to-End System Flow (Real-Time Execution)
-Runtime Workflow
+News articles, reports, opinion pieces, and online content influence decisions every day. Yet most systems operate as black boxes, producing outputs without exposing the reasoning behind them.
 
-User enters news text in the web interface
+VERITAS was built around a different principle:
 
-Frontend sends structured JSON to backend API
+**Credibility ≠ Truth**
 
-Backend preprocesses input text
+**Bias ≠ Falsehood**
 
-Text converted into numerical vectors (TF-IDF / embeddings)
+The goal is not to decide what users should believe.
 
-Trained ML model predicts Fake or Real
+The goal is to expose the structural signals that help them make informed judgments.
 
-Confidence probability calculated
+---
 
-Backend returns structured JSON
+## How VERITAS Works
 
-Frontend displays prediction result
+Every article passes through a deterministic six-layer intelligence pipeline.
 
-🏗 3. High-Level System Architecture
-4
-Architecture Layers
-1️⃣ Presentation Layer (Frontend)
+### 01 — Article Processing
 
-React.js
+Extract and normalize article content.
 
-Text input interface
+### 02 — Claim Extraction
 
-Prediction result visualization
+Identify factual assertions, entities, dates, percentages, and evidence markers.
 
-Loading & error states
+### 03 — Credibility Analysis
 
-2️⃣ Application Layer (Backend API)
+Evaluate:
 
-Flask / Express REST API
+* Structural evidence
+* Source signals
+* Linguistic quality
+* Internal consistency
 
-Input validation
+### 04 — Bias Analysis
 
-Text preprocessing pipeline
+Detect:
 
-Model inference endpoint
+* Subjectivity
+* Framing
+* Polarization
+* Sensationalism
+* Narrative imbalance
 
-Error handling
+### 05 — Explainable Intelligence
 
-3️⃣ NLP & Machine Learning Layer
+Generate:
 
-Text cleaning (lowercasing, stopword removal)
+* Executive summaries
+* Decision traces
+* Risk signals
+* Analytical insights
 
-Tokenization
+### 06 — Intelligence Report
 
-TF-IDF Vectorization
+Produce a structured intelligence briefing optimized for human understanding.
 
-Trained classification model
+---
 
-Probability scoring
+## Platform Features
 
-4️⃣ Data & Infrastructure Layer
+### Intelligence Reports
 
-Dataset preprocessing
+Transform raw information into explainable intelligence documents.
 
-Model serialization (Pickle / Joblib)
+### Decision Trace
 
-Environment variable configuration
+Expose how every conclusion was reached.
 
-Deployment-ready backend structure
+### Intelligence Library
 
-🧠 4. Machine Learning Pipeline
-🔹 Data Preprocessing Steps
+Save, organize, and revisit historical analyses.
 
-Remove punctuation
+### Examples
 
-Convert to lowercase
+Explore real-world intelligence reports instantly.
 
-Remove stopwords
+### Validation
 
-Lemmatization / stemming
+Review empirical testing and observed failure cases.
 
-Tokenization
+### Research
 
-🔹 Feature Engineering
+Study the methodology behind the platform.
 
-TF-IDF Vectorization
+### Compare
 
-N-gram modeling
+Contrast different articles side-by-side.
 
-Vocabulary limitation
+---
 
-Sparse matrix transformation
+## Technology
 
-🔹 Model Training
+Frontend
 
-Possible algorithms:
+* React
+* Framer Motion
+* Firebase Authentication
 
-Logistic Regression
+Backend
 
-Naive Bayes
+* FastAPI
+* Python
+* spaCy
+* Motor
+* MongoDB
 
-Support Vector Machine
+Architecture
 
-Random Forest
+* Deterministic NLP
+* Explainable Intelligence
+* Rule-Based Credibility Analysis
+* Rule-Based Bias Detection
 
-🔹 Backend Prediction Endpoint Example
-@app.route("/predict", methods=["POST"])
-def predict():
-    data = request.json
-    text = data.get("news")
+---
 
-    processed_text = preprocess(text)
-    vector = vectorizer.transform([processed_text])
-    prediction = model.predict(vector)
-    probability = model.predict_proba(vector)
+## Design Principles
 
-    return jsonify({
-        "prediction": prediction[0],
-        "confidence": float(max(probability[0]))
-    })
+VERITAS is built around five principles:
 
-Internal Backend Execution Steps
+### Transparency
 
-Request parsing
+Every conclusion should be explainable.
 
-Text cleaning
+### Determinism
 
-Vector transformation
+The same input should produce the same output.
 
-Model inference
+### Accountability
 
-Probability extraction
+Limitations should be documented openly.
 
-JSON formatting
+### Clarity
 
-HTTP response
+Complex information should become understandable.
 
-📊 5. Model Evaluation & Performance
+### Human Judgment
 
-To make this strong, include:
+The system assists decision-making. It does not replace it.
 
-Accuracy
+---
 
-Precision
+## Known Limitations
 
-Recall
+VERITAS performs best on traditional journalistic and informational content.
 
-F1-score
+Current limitations include:
 
-Confusion Matrix
+* Satire
+* Humor and irony
+* Paywalled content
+* Emerging breaking news
+* Incomplete context
+* Unknown publishers
 
-Example:
+These limitations are documented openly throughout the platform.
 
-Model Accuracy: 94.3%
-F1 Score: 0.92
+---
 
-If you don’t mention metrics, it weakens credibility.
+## Vision
 
-💻 6. Frontend Interaction Logic
-const handlePredict = async () => {
-  const response = await axios.post("/predict", {
-    news: userInput
-  });
+We believe the future of intelligence systems is not prediction.
 
-  setResult(response.data.prediction);
-  setConfidence(response.data.confidence);
-};
+It is explanation.
 
-Frontend Responsibilities
+A future where information can be understood, not merely consumed.
 
-Capture user input
+---
 
-Send structured JSON request
+### VERITAS
 
-Display prediction result
-
-Show confidence score
-
-Handle errors gracefully
-
-📊 7. System Diagrams
-🏛 7.1 System Architecture Diagram
-<img width="245" height="684" alt="image" src="https://github.com/user-attachments/assets/ebe1d7a9-f3e0-4690-bf20-78e54fcdfcff" />
-🔄 7.2 Sequence Diagram
-<img width="504" height="355" alt="image" src="https://github.com/user-attachments/assets/39d2d35b-f2bf-4777-9715-987a942dcae7" />
-🚀 7.3 Deployment Diagram
-<img width="246" height="356" alt="image" src="https://github.com/user-attachments/assets/91bd25a3-14b7-4b4a-b774-19222707a3d4" />
-📸 8. User Interface Screenshots
-
-After creating a screenshots/ folder:
-Project screen shots are available in this folder 
-🔥 9. Current Limitations
-
-❌ Limited to trained dataset domain
-
-❌ No real-time news API integration
-
-❌ Not fine-tuned on latest misinformation trends
-
-❌ No deep learning transformer-based model
-
-🚀 10. Future Enhancements
-
-Integrate BERT / Transformer-based model
-
-Add real-time news API integration
-
-Implement explainable AI (feature importance visualization)
-
-Deploy as scalable microservice
-
-Add multilingual fake news detection
-
-Add browser extension integration
-
-🎓 Learning Outcomes
-
-NLP preprocessing techniques
-
-Feature engineering with TF-IDF
-
-Text classification models
-
-Model evaluation metrics
-
-REST API integration with ML
-
-Full-stack ML deployment
-
-👨‍💻 Author
-
-Siva Satya Sai Bhagavan Gopalajosyula
-B.Tech – Artificial Intelligence & Data Science
-
-
+**Intelligence, made transparent.**
